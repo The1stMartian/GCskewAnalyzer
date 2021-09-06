@@ -3,7 +3,7 @@
 ### Usage:
 The GC skew analysis script is written in Python3 and has no dependencies. 
 To execute the program, enter:<br>
-> python GCS_v6.py
+&gt;> python GCS_v6.py
 
 ![GC Skew Analysis Script](https://github.com/The1stMartian/GCskew/blob/main/Data/cmdLine.png)
 
@@ -36,10 +36,10 @@ by the user. Note: ori and ter coordinates can be looked up on the DoriC website
 
 I developed this script as part of my investigations into the evolutionary history of gene inversions:
 
-&emsp;Gene inversion potentiates bacterial evolvability and virulence
-&emsp;&emsp;Christopher N Merrikh, Houra Merrikh
-&emsp;&emsp;Nature Communications, Nov. 2018.
-&emsp;&emsp;https://pubmed.ncbi.nlm.nih.gov/30405125/
+     Gene inversion potentiates bacterial evolvability and virulence
+        Christopher N Merrikh, Houra Merrikh
+        Nature Communications, Nov. 2018.
+        https://pubmed.ncbi.nlm.nih.gov/30405125/
 
 I also used the updated the script with the codon-specific calculations for a response to a matters arising paper that challenged our initial findings:<br><br>
 &emsp;[Challenge](https://www.biorxiv.org/content/10.1101/2020.01.14.906818v1)<br>
