@@ -8,9 +8,9 @@ To execute the program, enter:<br>
 ![GC Skew Analysis Script](https://github.com/The1stMartian/GCskew/blob/main/Data/cmdLine.png)
 
 ### Function:
-The script calculates GC skew values using multiple calculations: 
+The script calculates GC skew values using multiple calculations: <br><br>
      By gene:
-         - all nucleotides ("whole gene") or only nucleotides in codon positions 1,2 or 3
+         - all nucleotides ("whole gene") or only nucleotides in codon positions 1,2 or 3<br><br>
      By sliding window:
          - across the full genome using a sliding window of adjustable length
 
@@ -46,7 +46,7 @@ I developed this script as part of my investigations into the evolutionary histo
         Nature Communications, Nov. 2018.
         https://pubmed.ncbi.nlm.nih.gov/30405125/
 
-I also used the updated the script with the codon-specific calculations for a response to a matters arising paper that challenged our initial findings:<br>
+I also used the updated the script with the codon-specific calculations for a response to a matters arising paper that challenged our initial findings:<br><br>
 [Challenge](https://www.biorxiv.org/content/10.1101/2020.01.14.906818v1)<br>
 [Our Response](https://www.biorxiv.org/content/10.1101/2020.05.26.117366v2)<br>
 
