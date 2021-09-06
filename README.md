@@ -12,7 +12,7 @@ The script calculates GC skew values using multiple calculations: <br><br>
 &emsp;a) By gene: all nucleotides ("whole gene") or only nucleotides in codon positions 1,2 or 3<br>
 &emsp;b) By sliding window: across the full genome using a sliding window of adjustable length<br>
 
-### Outputs (6):
+### Six Outputs:
          
 1) A flat file with the original gene annotation data plus four columns, one for each of the various whole-gene GC skew values (all nucleotides, or only nucleotides in codon position 1, codon position 2, or codon position 3).
 2) Wiggle file of GC skew values calculated over a Sliding window across the whole genome
@@ -25,25 +25,25 @@ Example output visualized in [MochiView](http://www.johnsonlab.ucsf.edu/mochi/)
 ![GC skew data visualization](https://github.com/The1stMartian/GCskew/blob/main/Data/Mochi1.png)
 
 ### Notes:
-a) For whole gene GC skew values, the value is relative to the <i>leading strand</i> of the replication fork.<br><br>
-b) This is where ter information is used - nucleotide 1 of the fasta sequence is assumed to be part of the origin, and ter is given
+&emsp;a) For whole gene GC skew values, the value is relative to the <i>leading strand</i> of the replication fork.<br><br>
+&emsp;b) This is where ter information is used - nucleotide 1 of the fasta sequence is assumed to be part of the origin, and ter is given
 by the user. Note: ori and ter coordinates can be looked up on the DoriC website: http://tubic.org/doric/public/index.php<br><br>
 (In cases where ori is <i>not</i> the first nucleotide, or very close, the genome sequence needs to be manually rotated.)<br><br>
-c) As a result, whole-gene GC skew values post-ter will have the opposite sign (-/+) as the value indicated by the sliding GC skew value which is <i>not</i> inverted post-ter.<br><br>
-d) Discussion of script function and hyperparameter adjustment can be found at the bottom, and changed in the analyzeGCskew() function<br>
+&emsp;c) As a result, whole-gene GC skew values post-ter will have the opposite sign (-/+) as the value indicated by the sliding GC skew value which is <i>not</i> inverted post-ter.<br><br>
+&emsp;d) Discussion of script function and hyperparameter adjustment can be found at the bottom, and changed in the analyzeGCskew() function<br>
 
 ### Development/References:
 
 I developed this script as part of my investigations into the evolutionary history of gene inversions:
 
-     Gene inversion potentiates bacterial evolvability and virulence
-        Christopher N Merrikh, Houra Merrikh
-        Nature Communications, Nov. 2018.
-        https://pubmed.ncbi.nlm.nih.gov/30405125/
+&emsp;Gene inversion potentiates bacterial evolvability and virulence
+&emsp;&emsp;Christopher N Merrikh, Houra Merrikh
+&emsp;&emsp;Nature Communications, Nov. 2018.
+&emsp;&emsp;https://pubmed.ncbi.nlm.nih.gov/30405125/
 
 I also used the updated the script with the codon-specific calculations for a response to a matters arising paper that challenged our initial findings:<br><br>
-[Challenge](https://www.biorxiv.org/content/10.1101/2020.01.14.906818v1)<br>
-[Our Response](https://www.biorxiv.org/content/10.1101/2020.05.26.117366v2)<br>
+&emsp;[Challenge](https://www.biorxiv.org/content/10.1101/2020.01.14.906818v1)<br>
+&emsp;[Our Response](https://www.biorxiv.org/content/10.1101/2020.05.26.117366v2)<br>
 
 ### Discussion
 Our analysis of the codon-specific GC skew values suggests that the replication fork and gene inversions, together, explain the vast majority of GC skew values in bacterial genomes. As a result, one can interpret negative GC skew values as an indication that a gene is in an atypical orientation as the result of an inversion event. 
