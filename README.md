@@ -9,22 +9,17 @@ To execute the program, enter:<br>
 
 ### Function:
 The script calculates GC skew values using multiple calculations: <br><br>
-     By gene:
-         - all nucleotides ("whole gene") or only nucleotides in codon positions 1,2 or 3<br><br>
-     By sliding window:
-         - across the full genome using a sliding window of adjustable length
+     By gene: all nucleotides ("whole gene") or only nucleotides in codon positions 1,2 or 3<br>
+     By sliding window: across the full genome using a sliding window of adjustable length<br>
 
 ### Outputs (6):
          
 1) A flat file with the original gene annotation data plus four columns, one for each of the various whole-gene GC skew values (all nucleotides, or only nucleotides in codon position 1, codon position 2, or codon position 3).
- 
-Wiggle Files:
-
-2) Sliding window across the whole genome
-3) Whole gene:  all nucleotides
-4) Whole gene:  Codon position 1
-5) Whole gene:  Codon position 2
-6) Whole gene:  Codon position 3
+2) Wiggle file of GC skew values calculated over a Sliding window across the whole genome
+3) Wiggle file by Whole gene:  All nucleotides
+4) Wiggle file by Whole gene:  Codon position 1
+5) Wiggle file by Whole gene:  Codon position 2
+6) Wiggle file by Whole gene:  Codon position 3
 
 Example output visualized in [MochiView](http://www.johnsonlab.ucsf.edu/mochi/)
 ![GC skew data visualization](https://github.com/The1stMartian/GCskew/blob/main/Data/Mochi1.png)
