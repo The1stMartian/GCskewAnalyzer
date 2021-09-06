@@ -12,6 +12,12 @@ The script calculates GC skew values using multiple calculations: <br><br>
 &emsp;a) By gene: all nucleotides ("whole gene") or only nucleotides in codon positions 1,2 or 3<br>
 &emsp;b) By sliding window: across the full genome using a sliding window of adjustable length<br>
 
+### Input Files:
+&emsp;1) A fasta formatted nucleotide sequence file for the whole genome
+&emsp;2) A features file
+&emsp;Note: Examples of each are provided in the Data folder. Users can simply copy/paste their data into the files and re-execute the script. 
+
+
 ### Six Outputs:
          
 1) A flat file with the original gene annotation data plus four columns, one for each of the various whole-gene GC skew values (all nucleotides, or only nucleotides in codon position 1, codon position 2, or codon position 3).
