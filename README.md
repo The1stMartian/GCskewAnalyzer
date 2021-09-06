@@ -31,28 +31,24 @@ Example output visualized in [MochiView](http://www.johnsonlab.ucsf.edu/mochi/)
 ![GC skew data visualization](https://github.com/The1stMartian/GCskew/blob/main/Data/Mochi1.png)
 
 ### Notes:
-&emsp;a) For whole gene GC skew values, the value is relative to the <i>leading strand</i> of the replication fork.<br><br>
-&emsp;b) This is where ter information is used - nucleotide 1 of the fasta sequence is assumed to be part of the origin, and ter is given
-by the user. Note: ori and ter coordinates can be looked up on the DoriC website: http://tubic.org/doric/public/index.php<br><br>
-(In cases where ori is <i>not</i> the first nucleotide, or very close, the genome sequence needs to be manually rotated.)<br><br>
-&emsp;c) As a result, whole-gene GC skew values post-ter will have the opposite sign (-/+) as the value indicated by the sliding GC skew value which is <i>not</i> inverted post-ter.<br><br>
-&emsp;d) Discussion of script function and hyperparameter adjustment can be found at the bottom, and changed in the analyzeGCskew() function<br>
+For whole gene GC skew values, the value is reported relative to the <i>leading strand</i> of the replication fork. To allow for this to occur, the user provides the location of the replication terminus (ter) and nucleotide 1 of the fasta sequence is assumed to be part of the origin. If you don't know what the ori and ter coordinates are, they can be looked up on the ![DoriC Website](http://tubic.org/doric/public/index.php)<br><br>
+In cases where ori is <i>not</i> the first nucleotide, or very close, the genome sequence needs to be manually rotated using software such as Clone Manager. Please note that as a result of the two chromosome arms being independently copied by two opposing replisomes, the GC skew value of each gene, post-ter, will have the opposite sign (-/+) as the value indicated by the sliding GC skew value which is <i>not</i> inverted post-ter. A discussion of script function and hyperparameter adjustment can be found at the bottom, and changed in the analyzeGCskew() function<br>
 
 ### Development/References:
 
-I developed this script as part of my investigations into the evolutionary history of gene inversions:
+I developed the original version of this script as part of my investigations into the evolutionary history of gene inversions:
 
      Gene inversion potentiates bacterial evolvability and virulence
         Christopher N Merrikh, Houra Merrikh
         Nature Communications, Nov. 2018.
         https://pubmed.ncbi.nlm.nih.gov/30405125/
 
-I also used the updated the script with the codon-specific calculations for a response to a matters arising paper that challenged our initial findings:<br><br>
+I updated the script with the codon-specific calculations for a response to a matters arising paper that challenged our initial findings:<br><br>
 &emsp;[Challenge](https://www.biorxiv.org/content/10.1101/2020.01.14.906818v1)<br>
 &emsp;[Our Response](https://www.biorxiv.org/content/10.1101/2020.05.26.117366v2)<br>
 
-### Discussion
-Our analysis of the codon-specific GC skew values suggests that the replication fork and gene inversions, together, explain the vast majority of GC skew values in bacterial genomes. As a result, one can interpret negative GC skew values as an indication that a gene is in an atypical orientation as the result of an inversion event. 
+### On the use of the GC skew for identifying inverted genes
+Our analysis of the codon position-specific GC skew values suggests that together, the combination of the mutational signature of the replication fork plus gene inversions are sufficient to explain the vast majority of GC skew values in bacterial genomes. As a result, one can interpret negative GC skew values as an indication that a gene is in an atypical orientation as the result of an inversion event. This signature is best observed using the codon position 1-based GC skew which may be retained for more than 100M years post-flip as discussed in our second manuscript.
 
 Rationale: Codon position 3 (CP3) nucleotides are highly mutable because they can often be changed without altering the encoded amino acid. Meanwhile, CP1 nucleotides are under strong selection because mutations usually result in a change in the encoded amino acid. Therefore, we did a CP1 vs. CP3 based analysis. We hypothesized that if the  replication fork is the primary driver of the GC skew, CP3-based GC skew values should generally be positive with respect to the leading strand of the replication fork due to their general mutability. Indeed that is what our results showed. This argues against the hypothesis that sequence context and other forms of selection are major drivers of the GC skew. 
 
