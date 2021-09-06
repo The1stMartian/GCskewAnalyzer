@@ -30,11 +30,11 @@ Example output visualized in [MochiView](http://www.johnsonlab.ucsf.edu/mochi/)
 ![GC skew data visualization](https://github.com/The1stMartian/GCskew/blob/main/Data/Mochi1.png)
 
 ### Notes:
-a) For whole gene GC skew values, the value is relative to the <i>leading strand</i> of the replication fork.<br>
+a) For whole gene GC skew values, the value is relative to the <i>leading strand</i> of the replication fork.<br><br>
 b) This is where ter information is used - nucleotide 1 of the fasta sequence is assumed to be part of the origin, and ter is given
-by the user. Note: ori and ter coordinates can be looked up on the DoriC website: http://tubic.org/doric/public/index.php<br>
-(In cases where ori is <i>not</i> the first nucleotide, or very close, the genome sequence needs to be manually rotated.)<br>
-c) As a result, whole-gene GC skew values post-ter will have the opposite sign (-/+) as the value indicated by the sliding GC skew value which is <i>not</i> inverted post-ter.<br>
+by the user. Note: ori and ter coordinates can be looked up on the DoriC website: http://tubic.org/doric/public/index.php<br><br>
+(In cases where ori is <i>not</i> the first nucleotide, or very close, the genome sequence needs to be manually rotated.)<br><br>
+c) As a result, whole-gene GC skew values post-ter will have the opposite sign (-/+) as the value indicated by the sliding GC skew value which is <i>not</i> inverted post-ter.<br><br>
 d) Discussion of script function and hyperparameter adjustment can be found at the bottom, and changed in the analyzeGCskew() function<br>
 
 ### Development/References:
