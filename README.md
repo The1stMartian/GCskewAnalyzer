@@ -13,8 +13,8 @@ The script calculates GC skew values using multiple calculations: <br><br>
 &emsp;b) By sliding window: across the full genome using a sliding window of adjustable length<br>
 
 ### Input Files:
-&emsp;1) A fasta formatted nucleotide sequence file for the whole genome
-&emsp;2) A features file
+&emsp;1) A fasta formatted nucleotide sequence file for the whole genome<br>
+&emsp;2) A features file<br>
 &emsp;Note: Examples of each are provided in the Data folder. Users can simply copy/paste their data into the files and re-execute the script. 
 
 
