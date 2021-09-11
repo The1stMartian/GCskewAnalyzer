@@ -437,7 +437,7 @@ def initialize(header):
 		print(70*"#")
 		print(70*"#")
 		print("#")
-		print("# GC Skew Analysis Tool v.5")
+		print("# GC Skew Analysis Tool v.7")
 		print("# ")
 		print("# Written by C. Breuer, Updated: 9/2021")
 		print("#")
