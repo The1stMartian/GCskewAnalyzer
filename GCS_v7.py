@@ -1,6 +1,6 @@
 # GC Skew Analysis Script
 # C. Breuer 9/2021
-# V7: Incorporated use of Pandas
+# V7: Now uses Pandas and .csv files
 #
 # Script calculates the GCS using multiple calculations: 
 #     By gene:
