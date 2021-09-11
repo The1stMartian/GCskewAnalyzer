@@ -9,13 +9,13 @@ To execute the program, enter:<br>
 
 ### Input Files: (3)
 
-&emsp;1) A comma delimited file ("ter_coords.csv") with the name of each genome to be analyzed and its replication terminus (ter) location<br><br>
+&emsp;1) A comma delimited file ("ter_coords.csv") with the name of each genome to be analyzed and its replication terminus (ter) location<br>
 &emsp;2) For each genome: A fasta formatted nucleotide sequence file for the whole genome (<genomeName>.fasta)<br>
 &emsp;3) For each genome: A comma delimited features file (<genomeName>_coords.csv)<br>
 
 Notes:<br>
-<i>- Examples of each input file are provided in the accompanying folder, Data. Users should simply copy/paste their data into the files and re-execute the script.</i>
-<i>- The script is controlled by the ter_coords.csv file. It will expect to find an accompanying genome sequence and features files for each listed genome/ter.</i> 
+<i>- Examples of each input file are provided in the accompanying folder, Data. Users should simply copy/paste their data into the files and re-execute the script.</i><br>
+<i>- The script is controlled by the ter_coords.csv file. It will expect to find an accompanying genome sequence and features files for each listed genome/ter.</i><br>
 <i>- The Data folder should be located the same directory as the GCS_vX.py script. </i> 
 
 
