@@ -13,10 +13,10 @@ To execute the program, enter:<br>
 &emsp;2) For each genome: A fasta formatted nucleotide sequence file for the whole genome (<genomeName>.fasta)<br>
 &emsp;3) For each genome: A comma delimited features file (<genomeName>_coords.csv)<br>
 
-Notes:<br>
-<i>- Examples of each input file are provided in the accompanying folder, Data. Users should simply copy/paste their data into the files and re-execute the script.</i><br>
-<i>- The script is controlled by the ter_coords.csv file. It will expect to find an accompanying genome sequence and features files for each listed genome/ter.</i><br>
-<i>- The Data folder should be located the same directory as the GCS_vX.py script. </i> 
+&emsp;Notes:<br>
+&emsp;<i>- Examples of each input file are provided in the accompanying folder, Data. Users should simply copy/paste their data into the files and re-execute the script.</i><br>
+&emsp;<i>- The script is controlled by the ter_coords.csv file. It will expect to find an accompanying genome sequence and features files for each listed genome/ter.</i><br>
+&emsp;<i>- The Data folder should be located the same directory as the GCS_vX.py script. </i> 
 
 
 ### Outputs: (6)
