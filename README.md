@@ -14,9 +14,9 @@ To execute the program, enter:<br>
 &emsp;<i>Examples of each are provided in the Data folder. Users can simply copy/paste their data into the files and re-execute the script.</i> 
 
 
-### Six Outputs:
+### Outputs: (6)
          
-1) A flat file with the original gene annotation data plus four columns, one for each of the various whole-gene GC skew values (all nucleotides, or only nucleotides in codon position 1, codon position 2, or codon position 3).
+1) A data frame of the original gene annotation data plus an additional column for each of the various whole-gene GC skew values (all nucleotides, or only nucleotides in codon position 1, codon position 2, or codon position 3).
 2) Wiggle file of GC skew values calculated over a Sliding window across the whole genome
 3) Wiggle file by whole gene:  All nucleotides
 4) Wiggle file by whole gene:  Codon position 1
@@ -27,7 +27,7 @@ Example output visualized in [MochiView](http://www.johnsonlab.ucsf.edu/mochi/)
 ![GC skew data visualization](https://github.com/The1stMartian/GCskew/blob/main/Data/Mochi1.png)
 
 ### Notes:
-For whole gene GC skew values, the value is reported relative to the <i>leading strand</i> of the replication fork. To allow for this to occur, the user provides the location of the replication terminus (ter) and nucleotide 1 of the fasta sequence is assumed to be part of the origin. If you don't know what the ori and ter coordinates are, they can be looked up on DoriC: http://tubic.org/doric/public/index.php <br>
+For whole-gene GC skew values, the value is reported relative to the <i>leading strand</i> of the replication fork. To allow for this to occur, the user provides the location of the replication terminus (ter) and nucleotide 1 of the fasta sequence is assumed to be part of the origin. If you don't know what the ori and ter coordinates are, they can be looked up on DoriC: http://tubic.org/doric/public/index.php <br>
 
 In cases where ori is <i>not</i> the first nucleotide, or very close, the genome sequence needs to be manually rotated using software such as Clone Manager. Please note that as a result of the two chromosome arms being independently copied by two opposing replisomes, the GC skew value of each gene, post-ter, will have the opposite sign (-/+) as the value indicated by the sliding GC skew value which is <i>not</i> inverted post-ter. A discussion of script function and hyperparameter adjustment can be found at the bottom, and changed in the analyzeGCskew() function<br>
 
