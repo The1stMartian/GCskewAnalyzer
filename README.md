@@ -9,7 +9,7 @@ To execute the program, enter:<br>
 
 ### Input Files: (3)
 &emsp;1) A fasta formatted nucleotide sequence file for the whole genome<br>
-&emsp;2) A comma delimited features file (.csv)<br><br>
+&emsp;2) A comma delimited features file (.csv)<br>
 &emsp;3) A comma delimited file with the name of each genome and its replication terminus (ter) location<br>
 &emsp;<i>Examples of each are provided in the Data folder. Users can simply copy/paste their data into the files and re-execute the script.</i> 
 
