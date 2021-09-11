@@ -2,8 +2,8 @@
 
 ### Usage:
 The GC skew analyzer script is written in Python3 and has no dependencies. 
-To execute the program, enter:<br>
-&gt;> python GCS_v6.py
+&emsp;To execute the program, enter:<br>
+&emsp;> python GCS_v6.py
 
 ![GC Skew Analysis Script](https://github.com/The1stMartian/GCskew/blob/main/Data/cmdLine.png)
 
