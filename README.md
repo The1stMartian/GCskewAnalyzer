@@ -10,8 +10,8 @@ To execute the program, enter:<br>
 ### Function:
 The script calculates GC skew values using multiple calculations: <br><br>
 &emsp;a) For each gene: 4 calculations<br>
-&emsp&emsp- all nucleotides ("whole gene")<br>
-&emsp&emsp- only nucleotides in codon positions 1,2 or 3<br>
+&emsp;&emsp;- all nucleotides ("whole gene")<br>
+&emsp;&emsp;- only nucleotides in codon positions 1,2 or 3<br>
 &emsp;b) By sliding window: across the full genome using a sliding window of adjustable length<br>
 
 ### Input Files:
