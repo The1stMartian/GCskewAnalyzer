@@ -1,7 +1,7 @@
 ### C. Breuer (Formerly C. Merrikh) 9/2021
 
 ### Usage:
-The GC skew analyzer script is written in Python3 and has no dependencies.<br> 
+&emsp;The GC skew analyzer script is written in Python3 and has no dependencies.<br> 
 &emsp;To execute the program, enter:<br>
 &emsp;> python GCS_v6.py<br>
 
